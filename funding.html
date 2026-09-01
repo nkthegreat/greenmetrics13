@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding & Calls for Proposals | GreenMetrics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                        },
+                        dark: {
+                            bg: '#0B0F17',
+                            card: '#111827',
+                            border: '#1F2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0B0F17] text-slate-200 antialiased font-sans selection:bg-emerald-500 selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0B0F17]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-white tracking-tight">
+                <span class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400">
+                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                </span>
+                Green<span class="text-emerald-400">Metrics</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="index.html#home" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-emerald-400 transition-colors">About Us</a>
+                <a href="services.html" class="hover:text-emerald-400 transition-colors">Services</a>
+                <a href="greenbusinesstraining.html" class="hover:text-emerald-400 transition-colors">Green Business Training</a>
+                <a href="funding.html" class="text-emerald-400 transition-colors">Funding</a>
+                <a href="news.html" class="hover:text-emerald-400 transition-colors">News</a>
+                <a href="index.html#contact" class="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/20">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 py-4 bg-[#0B0F17] border-b border-slate-800 space-y-4">
+            <a href="index.html#home" class="block text-slate-300 hover:text-emerald-400">Home</a>
+            <a href="about.html" class="block text-slate-300 hover:text-emerald-400">About Us</a>
+            <a href="services.html" class="block text-slate-300 hover:text-emerald-400">Services</a>
+            <a href="greenbusinesstraining.html" class="block text-slate-300 hover:text-emerald-400">Green Business Training</a>
+            <a href="funding.html" class="block text-emerald-400 font-semibold">Funding</a>
+            <a href="news.html" class="block text-slate-300 hover:text-emerald-400">News</a>
+            <a href="index.html#contact" class="inline-block px-5 py-2 rounded-full bg-emerald-500 text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="relative pt-36 pb-16 lg:pt-48 lg:pb-24 overflow-hidden border-b border-slate-800/60">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-6">
+                <i data-lucide="banknote" class="w-4 h-4"></i> Grants, Subsidies & Calls
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Funding & <br>
+                <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Calls for Proposals</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                Εντοπίστε, αξιολογήστε και διεκδικήστε εθνικά και ευρωπαϊκά χρηματοδοτικά εργαλεία για έργα κυκλικής οικονομίας, ενεργειακής αναβάθμισης και πράσινης καινοτομίας.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= ADVISORY OVERVIEW ================= -->
+    <section class="py-16 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#111827] border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                        <i data-lucide="search" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Eligibility Assessment</h3>
+                    <p class="text-slate-400 text-sm">Προέλεγχος επιλεξιμότητας και ταίριασμα του επενδυτικού σας σχεδίου με την κατάλληλη πρόσκληση.</p>
+                </div>
+                <div class="bg-[#111827] border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                        <i data-lucide="file-signature" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Proposal Drafting</h3>
+                    <p class="text-slate-400 text-sm">Σύνταξη τεχνικοοικονομικών φακέλων, δεικτών ESG και μελετών βιωσιμότητας για μέγιστη μοριοδότηση.</p>
+                </div>
+                <div class="bg-[#111827] border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                        <i data-lucide="check-check" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Project Management</h3>
+                    <p class="text-slate-400 text-sm">Διαχείριση, παρακολούθηση οροσήμων και πιστοποίηση δαπανών μέχρι την τελική εκταμίευση.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACTIVE CALLS FOR PROPOSALS ================= -->
+    <main class="py-20 space-y-16">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2 block">Open Opportunities</span>
+                    <h2 class="text-3xl font-bold text-white">Τρέχουσες Προσκλήσεις (Calls for Proposals)</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Ενεργές Υποβολές
+                    </span>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+
+                <!-- Call 1: ΕΣΠΑ -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-emerald-500/40 transition-all shadow-xl">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-3 mb-3">
+                                <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold">ΕΣΠΑ 2021-2027</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs">Εθνικό Πρόγραμμα</span>
+                                <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> Ανοιχτό προς Υποβολή</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Πράσινος Μετασχηματισμός & Κυκλική Οικονομία ΜμΕ</h3>
+                            <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">
+                                Ενίσχυση υφιστάμενων επιχειρήσεων για την υιοθέτηση συστημάτων ανακύκλωσης, αναβάθμιση ενεργειακής κλάσης κτιριακών υποδομών και εγκατάσταση εξοπλισμού χαμηλών εκπομπών άνθρακα.
+                            </p>
+                        </div>
+                        <div class="lg:text-right shrink-0">
+                            <span class="text-xs text-slate-400 block mb-1">Ποσοστό Ενίσχυσης</span>
+                            <span class="text-3xl font-extrabold text-emerald-400">40% - 55%</span>
+                            <span class="text-xs text-slate-500 block mt-1">Προϋπολογισμός: έως 500.000 €</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+                        <div>
+                            <span class="font-semibold text-emerald-300 block mb-1">Επιλέξιμες Δαπάνες:</span>
+                            <p class="text-slate-400">Μηχανολογικός εξοπλισμός LCA, φωτοβολταϊκά net-metering, πιστοποιήσεις ISO 14001 & ISO 59000.</p>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-emerald-300 block mb-1">Δικαιούχοι:</span>
+                            <p class="text-slate-400">Υφιστάμενες & νέες Μικρομεσαίες Επιχειρήσεις (ΜμΕ) όλων των κλάδων.</p>
+                        </div>
+                        <div class="flex items-center md:justify-end">
+                            <a href="index.html#contact" class="w-full md:w-auto px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs transition shadow-lg shadow-emerald-500/20 text-center">
+                                Αίτηση Ελέγχου Επιλεξιμότητας
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call 2: Horizon Europe -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-teal-500/40 transition-all shadow-xl">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-3 mb-3">
+                                <span class="px-3 py-1 bg-teal-500/10 text-teal-400 border border-teal-500/20 rounded-full text-xs font-semibold">Horizon Europe</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs">Cluster 6: Circular Economy & Bioeconomy</span>
+                                <span class="text-xs text-teal-400 font-semibold flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> Call for Proposals</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">HORIZON-CL6-CIRCBIO: Καινοτόμα Βιο-βασισμένα Υλικά & Διαλύτες</h3>
+                            <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">
+                                Χρηματοδότηση κοινοπραξιών (consortia) για την ανάπτυξη και βιομηχανική κλιμάκωση φυσικών βαθέως ευτηκτικών διαλυτών (NaDES), βιοδιασπώμενων πολυμερών και αξιοποίηση αγροτοδιατροφικών υπολειμμάτων.
+                            </p>
+                        </div>
+                        <div class="lg:text-right shrink-0">
+                            <span class="text-xs text-slate-400 block mb-1">Χρηματοδότηση Έργου</span>
+                            <span class="text-3xl font-extrabold text-teal-400">100% RIA / 70% IA</span>
+                            <span class="text-xs text-slate-500 block mt-1">Budget ανά έργο: 4M - 7M €</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+                        <div>
+                            <span class="font-semibold text-teal-300 block mb-1">Στόχος:</span>
+                            <p class="text-slate-400">Έρευνα & Βιομηχανική εφαρμογή τεχνολογιών TRL 4-7 σε ευρωπαϊκό επίπεδο.</p>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-teal-300 block mb-1">Συμμετοχή:</span>
+                            <p class="text-slate-400">Ερευνητικά κέντρα, πανεπιστήμια, βιομηχανικοί εταίροι & καινοτόμες SMEs.</p>
+                        </div>
+                        <div class="flex items-center md:justify-end">
+                            <a href="index.html#contact" class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-500 hover:bg-teal-600 text-white font-semibold text-xs transition shadow-lg shadow-teal-500/20 text-center">
+                                Συμμετοχή σε Κοινοπραξία
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call 3: Ταμείο Ανάκαμψης -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-blue-500/40 transition-all shadow-xl">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-3 mb-3">
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-xs font-semibold">Ταμείο Ανάκαμψης & Ανθεκτικότητας</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs">NextGenerationEU</span>
+                                <span class="text-xs text-blue-400 font-semibold flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> Produc-E Green</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Βιομηχανική Συμβίωση & Επεξεργασία Δευτερογενών Υλικών</h3>
+                            <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">
+                                Καθεστώς ενίσχυσης για μεγάλες και μεσαίες βιομηχανικές μονάδες που επενδύουν σε γραμμές ανακύκλωσης, ανάκτησης πρώτων υλών και κλειστών κυκλωμάτων νερού/ενέργειας.
+                            </p>
+                        </div>
+                        <div class="lg:text-right shrink-0">
+                            <span class="text-xs text-slate-400 block mb-1">Μορφή Ενίσχυσης</span>
+                            <span class="text-3xl font-extrabold text-blue-400">Επιχορήγηση + Δάνεια</span>
+                            <span class="text-xs text-slate-500 block mt-1">Επενδυτικά σχέδια > 1M €</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+                        <div>
+                            <span class="font-semibold text-blue-300 block mb-1">Προτεραιότητα:</span>
+                            <p class="text-slate-400">Μείωση εκπομπών CO₂ κατά τουλάχιστον 30% και επαναχρησιμοποίηση αποβλήτων.</p>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-blue-300 block mb-1">Προθεσμία:</span>
+                            <p class="text-slate-400">Άμεση αξιολόγηση με σειρά προτεραιότητας υποβολής φακέλου.</p>
+                        </div>
+                        <div class="flex items-center md:justify-end">
+                            <a href="index.html#contact" class="w-full md:w-auto px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs transition shadow-lg shadow-blue-500/20 text-center">
+                                Υποβολή Φακέλου
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ================= FUNDING ROADMAP BANNER ================= -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-[#111827] border border-emerald-500/20 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="max-w-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Δεν βρήκατε το κατάλληλο πρόγραμμα;</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Αναλαμβάνουμε τον συνεχή έλεγχο νέων προκηρύξεων και σας ειδοποιούμε άμεσα μόλις ανοίξει πρόγραμμα επιδότησης που ταιριάζει ακριβώς στον ΚΑΔ και τον προϋπολογισμό της επιχείρησής σας.
+                    </p>
+                </div>
+                <a href="index.html#contact" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 shrink-0">
+                    Ζητήστε Εξατομικευμένο Έλεγχο
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-slate-800 py-10 bg-[#0B0F17] text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-white font-bold">
+                <i data-lucide="leaf" class="w-5 h-5 text-emerald-400"></i> GreenMetrics
+            </div>
+            <div>
+                &copy; 2026 GreenMetrics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for Lucide Icons & Mobile Menu -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
