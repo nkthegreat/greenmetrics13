@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | GreenMetrics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                        },
+                        dark: {
+                            bg: '#0B0F17',
+                            card: '#111827',
+                            border: '#1F2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0B0F17] text-slate-200 antialiased font-sans selection:bg-emerald-500 selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0B0F17]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-white tracking-tight">
+                <span class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400">
+                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                </span>
+                Green<span class="text-emerald-400">Metrics</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="index.html#home" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-emerald-400 transition-colors">About Us</a>
+                <a href="services.html" class="text-emerald-400 transition-colors">Services</a>
+                <a href="index.html#training" class="hover:text-emerald-400 transition-colors">Green Business Training</a>
+                <a href="index.html#funding" class="hover:text-emerald-400 transition-colors">Funding</a>
+                <a href="index.html#news" class="hover:text-emerald-400 transition-colors">News</a>
+                <a href="index.html#contact" class="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/20">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 py-4 bg-[#0B0F17] border-b border-slate-800 space-y-4">
+            <a href="index.html#home" class="block text-slate-300 hover:text-emerald-400">Home</a>
+            <a href="about.html" class="block text-slate-300 hover:text-emerald-400">About Us</a>
+            <a href="services.html" class="block text-emerald-400 font-semibold">Services</a>
+            <a href="index.html#training" class="block text-slate-300 hover:text-emerald-400">Green Business Training</a>
+            <a href="index.html#funding" class="block text-slate-300 hover:text-emerald-400">Funding</a>
+            <a href="index.html#news" class="block text-slate-300 hover:text-emerald-400">News</a>
+            <a href="index.html#contact" class="inline-block px-5 py-2 rounded-full bg-emerald-500 text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="relative pt-36 pb-16 lg:pt-48 lg:pb-24 overflow-hidden border-b border-slate-800/60">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-6">
+                <i data-lucide="cpu" class="w-4 h-4"></i> Tailored Sustainability Solutions
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Our Core <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Services</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                GreenMetrics offers a wide range of services that help businesses adopt sustainable practices, reduce their environmental impact, and enhance their competitiveness in the emerging green economy through scientific innovation and advanced tools.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES CONTENT ================= -->
+    <main class="py-20 space-y-24">
+
+        <!-- 1. ENVIRONMENTAL FOOTPRINT ANALYSIS -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="p-2.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-xl">
+                    <i data-lucide="footprints" class="w-6 h-6"></i>
+                </span>
+                <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Module 01</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">1. Environmental Footprint Analysis</h2>
+            <p class="text-slate-400 max-w-3xl text-lg mb-12">
+                Helping organizations understand, measure, and reduce their overall environmental impact through scientifically grounded methodologies and tools.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 1a. LCA -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/40 transition-all">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+                            <i data-lucide="recycle" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">a. Life Cycle Assessment (LCA)</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Standardized method assessing environmental impacts across all stages of a product or service lifecycle — from raw material extraction to end-of-life disposal.
+                        </p>
+
+                        <div class="space-y-4 text-xs border-t border-slate-800/80 pt-5">
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">What it includes:</span>
+                                <ul class="list-disc list-inside text-slate-400 space-y-1">
+                                    <li>Mapping energy & material flows</li>
+                                    <li>Quantifying impacts (CO₂, water, resources)</li>
+                                    <li>Scenario analysis for eco-design</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Tools used:</span>
+                                <p class="text-slate-400">SimaPro, GaBi, OpenLCA</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Use cases:</span>
+                                <p class="text-slate-400">Eco-friendly product development, EPD & ISO 14040 support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1b. Carbon Footprint -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/40 transition-all">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+                            <i data-lucide="cloud-fog" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">b. Carbon Footprint Analysis</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Quantifying greenhouse gas (GHG) emissions from business operations, products, or services, expressed accurately in CO₂-equivalents.
+                        </p>
+
+                        <div class="space-y-4 text-xs border-t border-slate-800/80 pt-5">
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">What it includes:</span>
+                                <ul class="list-disc list-inside text-slate-400 space-y-1">
+                                    <li>Identification of Scope 1, 2 & 3 emissions</li>
+                                    <li>Verified standards calculations</li>
+                                    <li>Reduction strategies & net-zero pathways</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Tools used:</span>
+                                <p class="text-slate-400">GHG Protocol, ISO 14064, Carbon Accounting Software</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Use cases:</span>
+                                <p class="text-slate-400">Corporate disclosures (CDP, ESG), carbon tax readiness</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1c. Water Footprint -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/40 transition-all">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+                            <i data-lucide="droplets" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">c. Water Footprint Assessment</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Evaluating freshwater volumes used directly or indirectly, identifying vulnerabilities, consumption rates, and water pollution risks.
+                        </p>
+
+                        <div class="space-y-4 text-xs border-t border-slate-800/80 pt-5">
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">What it includes:</span>
+                                <ul class="list-disc list-inside text-slate-400 space-y-1">
+                                    <li>Quantification of blue, green & grey water</li>
+                                    <li>Spatial water stress analysis</li>
+                                    <li>Water conservation & mitigation plans</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Tools used:</span>
+                                <p class="text-slate-400">Water Footprint Network, ISO 14046, Aqueduct Atlas</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Use cases:</span>
+                                <p class="text-slate-400">Water-intensive industries (Agri, F&B, Textiles), standard compliance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. GREEN TECHNOLOGIES & INNOVATION -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#111827] to-[#0E131F] border border-slate-800 relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="p-2.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-xl">
+                        <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                    </span>
+                    <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Module 02</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-4">2. Green Technologies & Innovation</h2>
+                <p class="text-slate-400 max-w-3xl mb-8">
+                    The integration of green technologies into business operations is essential for reducing environmental impact and promoting the circular economy.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Services Offered -->
+                    <div class="bg-[#0B0F17] p-6 rounded-2xl border border-slate-800/80">
+                        <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="check-circle" class="text-emerald-400 w-4 h-4"></i> Services Offered
+                        </h4>
+                        <ul class="text-slate-400 text-sm space-y-3">
+                            <li>• Development of renewable energy solutions (solar panels, wind turbines).</li>
+                            <li>• Consulting on waste reduction and material reuse strategies.</li>
+                            <li>• Advanced laboratory infrastructure & expertise for plant-based product development, natural extracts, active ingredients, food supplements, cosmetics, and bioactive formulations.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Benefits -->
+                    <div class="bg-[#0B0F17] p-6 rounded-2xl border border-slate-800/80">
+                        <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="trending-up" class="text-emerald-400 w-4 h-4"></i> Business Benefits
+                        </h4>
+                        <ul class="text-slate-400 text-sm space-y-3">
+                            <li class="flex items-start gap-2"><i data-lucide="arrow-up-right" class="w-4 h-4 text-emerald-400 mt-1 shrink-0"></i> Reduction of operational costs</li>
+                            <li class="flex items-start gap-2"><i data-lucide="arrow-up-right" class="w-4 h-4 text-emerald-400 mt-1 shrink-0"></i> Compliance with sustainability regulations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Application Examples -->
+                    <div class="bg-[#0B0F17] p-6 rounded-2xl border border-slate-800/80">
+                        <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="layers" class="text-emerald-400 w-4 h-4"></i> Application Examples
+                        </h4>
+                        <ul class="text-slate-400 text-sm space-y-3">
+                            <li>• Implementation of recycling technologies in industrial facilities.</li>
+                            <li>• Support in the systemic transition to a circular economy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3, 4, 5 GRID -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- 3. Environmental Management Systems -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/40 transition-all">
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Module 03</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">3. Environmental Management Systems</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Organize and improve environmental performance consistently and strategically.
+                        </p>
+
+                        <div class="space-y-4 text-xs">
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Services offered:</span>
+                                <ul class="list-disc list-inside text-slate-400 space-y-1">
+                                    <li>ISO Design & Support: ISO 14001:2015, ISO 14040/44, ISO 50001, ISO 59000 (Circular Economy)</li>
+                                    <li>Environmental management policy setup</li>
+                                    <li>System updates & staff training</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Benefits:</span>
+                                <p class="text-slate-400">Systematic monitoring, impact reduction, heightened corporate responsibility.</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Project examples:</span>
+                                <p class="text-slate-400">Manufacturing plant certifications, custom awareness & training programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Sustainability Report Development -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/40 transition-all">
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Module 04</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">4. Sustainability Report Development</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            The ultimate tool for transparency, highlighting your corporate and environmental responsibility.
+                        </p>
+
+                        <div class="space-y-4 text-xs">
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Services offered:</span>
+                                <ul class="list-disc list-inside text-slate-400 space-y-1">
+                                    <li>Management tools & ESG strategy drafting</li>
+                                    <li>Environmental & social performance data presentation</li>
+                                    <li>Reporting in line with GRI Standards & ESG metrics</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Benefits:</span>
+                                <p class="text-slate-400">Enhanced corporate image, fortified trust from investors and customers.</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Project examples:</span>
+                                <p class="text-slate-400">Annual sustainability reports for international entities, custom KPI monitoring trackers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Sustainability Strategic Planning -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/40 transition-all">
+                    <div>
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Module 05</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">5. Sustainability Strategic Planning</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Developing long-term solutions that synchronize sustainability with superior financial performance.
+                        </p>
+
+                        <div class="space-y-4 text-xs">
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Services offered:</span>
+                                <ul class="list-disc list-inside text-slate-400 space-y-1">
+                                    <li>Current status analysis & recommendations</li>
+                                    <li>Waste & energy cost reduction designs</li>
+                                    <li>Cost-benefit analysis of green tech investments</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Benefits:</span>
+                                <p class="text-slate-400">Alignment with goals, lasting competitive advantages.</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-emerald-300 block mb-1">Project examples:</span>
+                                <p class="text-slate-400">Decarbonization strategy designs, low-carbon model roadmaps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= BANNER / CLOSING ================= -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="p-10 rounded-3xl bg-gradient-to-r from-emerald-900/30 via-[#111827] to-[#111827] border border-emerald-500/20 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="max-w-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Your Trusted Partner in the Green Transition</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Through these services, GreenMetrics aims to be a trusted partner for businesses, helping them adopt sustainable practices and ensure their successful path toward a greener and more sustainable future.
+                    </p>
+                </div>
+                <a href="index.html#contact" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 shrink-0">
+                    Get Started
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-slate-800 py-10 bg-[#0B0F17] text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-white font-bold">
+                <i data-lucide="leaf" class="w-5 h-5 text-emerald-400"></i> GreenMetrics
+            </div>
+            <div>
+                &copy; 2026 GreenMetrics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for Lucide Icons & Mobile Menu -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
