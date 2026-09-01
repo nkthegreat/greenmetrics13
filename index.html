@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMetrics | Βιώσιμη Ανάπτυξη & Κυκλική Οικονομία</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
@@ -29,42 +31,49 @@
 </head>
 <body class="bg-[#0B0F17] text-slate-200 antialiased font-sans selection:bg-emerald-500 selection:text-white">
 
+    <!-- ================= NAVBAR ================= -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#0B0F17]/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#home" class="flex items-center gap-2 text-2xl font-bold text-white tracking-tight">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-white tracking-tight">
                 <span class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400">
                     <i data-lucide="leaf" class="w-6 h-6"></i>
                 </span>
                 Green<span class="text-emerald-400">Metrics</span>
             </a>
 
+            <!-- Desktop Links -->
             <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
-                <a href="#home" class="hover:text-emerald-400 transition-colors">Home</a>
-                <a href="#about" class="hover:text-emerald-400 transition-colors">About Us</a>
-                <a href="#services" class="hover:text-emerald-400 transition-colors">Services</a>
-                <a href="#training" class="hover:text-emerald-400 transition-colors">Green Business Training</a>
-                <a href="#funding" class="hover:text-emerald-400 transition-colors">Funding</a>
-                <a href="#news" class="hover:text-emerald-400 transition-colors">News</a>
+                <a href="index.html" class="text-emerald-400 font-semibold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-emerald-400 transition-colors">About Us</a>
+                <a href="services.html" class="hover:text-emerald-400 transition-colors">Services</a>
+                <a href="greenbusinesstraining.html" class="hover:text-emerald-400 transition-colors">Green Business Training</a>
+                <a href="funding.html" class="hover:text-emerald-400 transition-colors">Funding</a>
+                <a href="news.html" class="hover:text-emerald-400 transition-colors">News</a>
                 <a href="#contact" class="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/20">Contact</a>
             </div>
 
+            <!-- Mobile Hamburger Button -->
             <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
                 <i data-lucide="menu" class="w-7 h-7"></i>
             </button>
         </div>
 
+        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden lg:hidden px-6 py-4 bg-[#0B0F17] border-b border-slate-800 space-y-4">
-            <a href="#home" class="block text-slate-300 hover:text-emerald-400">Home</a>
-            <a href="#about" class="block text-slate-300 hover:text-emerald-400">About Us</a>
-            <a href="#services" class="block text-slate-300 hover:text-emerald-400">Services</a>
-            <a href="#training" class="block text-slate-300 hover:text-emerald-400">Green Business Training</a>
-            <a href="#funding" class="block text-slate-300 hover:text-emerald-400">Funding</a>
-            <a href="#news" class="block text-slate-300 hover:text-emerald-400">News</a>
+            <a href="index.html" class="block text-emerald-400 font-semibold">Home</a>
+            <a href="about.html" class="block text-slate-300 hover:text-emerald-400">About Us</a>
+            <a href="services.html" class="block text-slate-300 hover:text-emerald-400">Services</a>
+            <a href="greenbusinesstraining.html" class="block text-slate-300 hover:text-emerald-400">Green Business Training</a>
+            <a href="funding.html" class="block text-slate-300 hover:text-emerald-400">Funding</a>
+            <a href="news.html" class="block text-slate-300 hover:text-emerald-400">News</a>
             <a href="#contact" class="inline-block px-5 py-2 rounded-full bg-emerald-500 text-white">Contact</a>
         </div>
     </nav>
 
+    <!-- ================= HERO SECTION ================= -->
     <section id="home" class="relative pt-36 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Glow effects -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
@@ -79,16 +88,17 @@
                 Ενδυναμώνουμε οργανισμούς και επιχειρήσεις να σχεδιάσουν, να χρηματοδοτήσουν και να εφαρμόσουν στρατηγικές ESG και κυκλικής οικονομίας με απόλυτη ακρίβεια.
             </p>
             <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#services" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
+                <a href="services.html" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
                     Ανακαλύψτε τις Υπηρεσίες <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
-                <a href="#funding" class="px-8 py-4 rounded-xl border border-slate-700 bg-slate-800/50 hover:bg-slate-800 text-slate-200 font-semibold transition-all flex items-center justify-center">
+                <a href="funding.html" class="px-8 py-4 rounded-xl border border-slate-700 bg-slate-800/50 hover:bg-slate-800 text-slate-200 font-semibold transition-all flex items-center justify-center">
                     Ευκαιρίες Χρηματοδότησης
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- ================= ABOUT US (PREVIEW) ================= -->
     <section id="about" class="py-20 border-t border-slate-800/60 relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -98,7 +108,7 @@
                     <p class="text-slate-400 leading-relaxed mb-6">
                         Στη <strong>GreenMetrics</strong>, πιστεύουμε ότι η μετάβαση σε μηδενικά απόβλητα δεν είναι απλώς περιβαλλοντική ευθύνη αλλά στρατηγικό ανταγωνιστικό πλεονέκτημα. Παρέχουμε αναλύσεις κύκλου ζωής (LCA), ESG benchmarks και καθοδήγηση για βιώσιμα επιχειρηματικά μοντέλα.
                     </p>
-                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-800">
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-800 mb-6">
                         <div>
                             <span class="block text-3xl font-extrabold text-emerald-400">98%</span>
                             <span class="text-sm text-slate-400">Ακρίβεια Μετρήσεων ESG</span>
@@ -108,6 +118,9 @@
                             <span class="text-sm text-slate-400">Εγκεκριμένα Πράσινα Κονδύλια</span>
                         </div>
                     </div>
+                    <a href="about.html" class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                        Μάθετε περισσότερα για εμάς <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
                 </div>
                 <div class="bg-gradient-to-tr from-emerald-500/20 to-teal-500/10 p-1 rounded-2xl border border-slate-800">
                     <div class="bg-[#111827] rounded-2xl p-8 space-y-6">
@@ -135,6 +148,7 @@
         </div>
     </section>
 
+    <!-- ================= SERVICES (PREVIEW) ================= -->
     <section id="services" class="py-20 bg-[#0E131F] border-t border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
@@ -143,39 +157,46 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-[#111827] border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all">
+                <!-- Card 1 -->
+                <a href="services.html" class="block bg-[#111827] border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all group">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6">
                         <i data-lucide="activity" class="w-6 h-6"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Green Auditing & ESG</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">
+                    <h4 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Green Auditing & ESG</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
                         Αξιολόγηση περιβαλλοντικών επιδόσεων, σύνταξη εκθέσεων βιωσιμότητας και συμμόρφωση με τα ευρωπαϊκά πρότυπα CSRD.
                     </p>
-                </div>
+                    <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">Αναλυτικά <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                </a>
 
-                <div class="bg-[#111827] border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all">
+                <!-- Card 2 -->
+                <a href="services.html" class="block bg-[#111827] border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all group">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6">
                         <i data-lucide="layers" class="w-6 h-6"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Eco-Design & Βιομηχανική Συμβίωση</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">
+                    <h4 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Eco-Design & Βιομηχανική Συμβίωση</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
                         Επανασχεδιασμός προϊόντων για ελαχιστοποίηση αποβλήτων και αξιοποίηση παραπροϊόντων μεταξύ επιχειρήσεων.
                     </p>
-                </div>
+                    <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">Αναλυτικά <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                </a>
 
-                <div class="bg-[#111827] border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all">
+                <!-- Card 3 -->
+                <a href="services.html" class="block bg-[#111827] border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all group">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6">
                         <i data-lucide="database" class="w-6 h-6"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-white mb-3">Carbon Accounting Platforms</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">
+                    <h4 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Carbon Accounting Platforms</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
                         Ψηφιακά εργαλεία παρακολούθησης και μέτρησης εκπομπών Scope 1, 2 και 3 σε πραγματικό χρόνο.
                     </p>
-                </div>
+                    <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">Αναλυτικά <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- ================= GREEN BUSINESS TRAINING (PREVIEW) ================= -->
     <section id="training" class="py-20 border-t border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 border border-emerald-500/20 rounded-3xl p-8 lg:p-12">
@@ -191,29 +212,28 @@
                             <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-emerald-400 w-5 h-5"></i> Κανονιστικό πλαίσιο Ε.Ε. & Green Taxonomy</li>
                             <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-emerald-400 w-5 h-5"></i> Gamified Workshops & Business Case Studies</li>
                         </ul>
-                        <a href="#contact" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all inline-flex items-center gap-2">
-                            Κλείστε Πρόγραμμα Εκπαίδευσης <i data-lucide="calendar" class="w-4 h-4"></i>
-                        </a>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="greenbusinesstraining.html" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all inline-flex items-center gap-2 text-sm">
+                                Όλα τα Προγράμματα Εκπαίδευσης <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="space-y-4">
-                        <div class="p-6 bg-[#0B0F17] border border-slate-800 rounded-xl">
-                            <div class="text-emerald-400 font-semibold mb-1">Module 1</div>
-                            <div class="text-white font-bold">Εισαγωγή στα Κυκλικά Επιχειρηματικά Μοντέλα</div>
-                        </div>
-                        <div class="p-6 bg-[#0B0F17] border border-slate-800 rounded-xl">
-                            <div class="text-emerald-400 font-semibold mb-1">Module 2</div>
-                            <div class="text-white font-bold">Ανάλυση Εφοδιαστικής Αλυσίδας & Scope 3</div>
-                        </div>
-                        <div class="p-6 bg-[#0B0F17] border border-slate-800 rounded-xl">
-                            <div class="text-emerald-400 font-semibold mb-1">Module 3</div>
-                            <div class="text-white font-bold">Πράσινα Χρηματοοικονομικά & Επενδύσεις</div>
-                        </div>
+                        <a href="greenbusinesstraining.html" class="block p-6 bg-[#0B0F17] border border-slate-800 rounded-xl hover:border-emerald-500/40 transition">
+                            <div class="text-emerald-400 font-semibold mb-1 text-sm">Pillar 1</div>
+                            <div class="text-white font-bold">1. Green Business Management</div>
+                        </a>
+                        <a href="greenbusinesstraining.html" class="block p-6 bg-[#0B0F17] border border-slate-800 rounded-xl hover:border-teal-500/40 transition">
+                            <div class="text-teal-400 font-semibold mb-1 text-sm">Pillar 2</div>
+                            <div class="text-white font-bold">2. Greening the Business</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ================= FUNDING (PREVIEW) ================= -->
     <section id="funding" class="py-20 bg-[#0E131F] border-t border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
@@ -229,7 +249,7 @@
                         <h4 class="text-lg font-bold text-white mb-2">Πράσινος Μετασχηματισμός ΜμΕ</h4>
                         <p class="text-slate-400 text-sm">Χρηματοδότηση αναβάθμισης εξοπλισμού, κυκλικών διαδικασιών και εξοικονόμησης ενέργειας.</p>
                     </div>
-                    <a href="#contact" class="mt-6 text-emerald-400 text-sm font-semibold flex items-center gap-1 hover:underline">Μάθετε περισσότερα <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                    <a href="funding.html" class="mt-6 text-emerald-400 text-sm font-semibold flex items-center gap-1 hover:underline">Μάθετε περισσότερα <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                 </div>
 
                 <div class="border border-slate-800 bg-[#111827] p-6 rounded-2xl flex flex-col justify-between">
@@ -238,7 +258,7 @@
                         <h4 class="text-lg font-bold text-white mb-2">Circular Economy & Bioeconomy</h4>
                         <p class="text-slate-400 text-sm">Συμμετοχή σε διεθνή κοινοπρακτικά ερευνητικά και καινοτόμα έργα για νέα υλικά.</p>
                     </div>
-                    <a href="#contact" class="mt-6 text-emerald-400 text-sm font-semibold flex items-center gap-1 hover:underline">Μάθετε περισσότερα <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                    <a href="funding.html" class="mt-6 text-emerald-400 text-sm font-semibold flex items-center gap-1 hover:underline">Μάθετε περισσότερα <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                 </div>
 
                 <div class="border border-slate-800 bg-[#111827] p-6 rounded-2xl flex flex-col justify-between">
@@ -247,12 +267,13 @@
                         <h4 class="text-lg font-bold text-white mb-2">Produc-E Green</h4>
                         <p class="text-slate-400 text-sm">Υποστήριξη βιομηχανικών επενδύσεων στην πράσινη τεχνολογία και την ανακύκλωση.</p>
                     </div>
-                    <a href="#contact" class="mt-6 text-emerald-400 text-sm font-semibold flex items-center gap-1 hover:underline">Μάθετε περισσότερα <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                    <a href="funding.html" class="mt-6 text-emerald-400 text-sm font-semibold flex items-center gap-1 hover:underline">Μάθετε περισσότερα <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ================= NEWS (PREVIEW) ================= -->
     <section id="news" class="py-20 border-t border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
@@ -260,10 +281,11 @@
                     <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2">News & Insights</h2>
                     <h3 class="text-3xl font-bold text-white">Τελευταία Νέα & Αναλύσεις</h3>
                 </div>
-                <a href="#news" class="text-emerald-400 text-sm font-semibold hover:underline mt-4 md:mt-0">Όλα τα άρθρα &rarr;</a>
+                <a href="news.html" class="text-emerald-400 text-sm font-semibold hover:underline mt-4 md:mt-0">Όλα τα άρθρα &rarr;</a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
                 <article class="bg-[#111827] border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition">
                     <div class="h-44 bg-slate-800 relative">
                         <div class="absolute inset-0 bg-emerald-950/30 flex items-center justify-center">
@@ -272,11 +294,15 @@
                     </div>
                     <div class="p-6">
                         <span class="text-xs text-slate-500">28 Αυγούστου 2026</span>
-                        <h4 class="text-lg font-bold text-white mt-1 mb-2 hover:text-emerald-400 cursor-pointer">Η νέα οδηγία CSRD και τι σημαίνει για τις ελληνικές επιχειρήσεις</h4>
-                        <p class="text-slate-400 text-sm">Πρακτικός οδηγός συμμόρφωσης για τις απαιτήσεις αναφοράς βιωσιμότητας.</p>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2 hover:text-emerald-400 cursor-pointer">
+                            <a href="article1.html">Η νέα οδηγία CSRD και τι σημαίνει για τις ελληνικές επιχειρήσεις</a>
+                        </h4>
+                        <p class="text-slate-400 text-sm mb-4">Πρακτικός οδηγός συμμόρφωσης για τις απαιτήσεις αναφοράς βιωσιμότητας.</p>
+                        <a href="article1.html" class="text-xs font-semibold text-emerald-400 hover:underline inline-flex items-center gap-1">Διαβάστε το άρθρο &rarr;</a>
                     </div>
                 </article>
 
+                <!-- Article 2 -->
                 <article class="bg-[#111827] border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition">
                     <div class="h-44 bg-slate-800 relative">
                         <div class="absolute inset-0 bg-teal-950/30 flex items-center justify-center">
@@ -285,11 +311,15 @@
                     </div>
                     <div class="p-6">
                         <span class="text-xs text-slate-500">15 Αυγούστου 2026</span>
-                        <h4 class="text-lg font-bold text-white mt-1 mb-2 hover:text-emerald-400 cursor-pointer">IoT και AI στην παρακολούθηση βιομηχανικών αποβλήτων</h4>
-                        <p class="text-slate-400 text-sm">Πώς οι νέες τεχνολογίες μειώνουν το κόστος διαχείρισης δευτερογενών υλικών.</p>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2 hover:text-emerald-400 cursor-pointer">
+                            <a href="news.html">IoT και AI στην παρακολούθηση βιομηχανικών αποβλήτων</a>
+                        </h4>
+                        <p class="text-slate-400 text-sm mb-4">Πώς οι νέες τεχνολογίες μειώνουν το κόστος διαχείρισης δευτερογενών υλικών.</p>
+                        <a href="news.html" class="text-xs font-semibold text-emerald-400 hover:underline inline-flex items-center gap-1">Διαβάστε το άρθρο &rarr;</a>
                     </div>
                 </article>
 
+                <!-- Article 3 -->
                 <article class="bg-[#111827] border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition">
                     <div class="h-44 bg-slate-800 relative">
                         <div class="absolute inset-0 bg-emerald-950/30 flex items-center justify-center">
@@ -298,14 +328,18 @@
                     </div>
                     <div class="p-6">
                         <span class="text-xs text-slate-500">02 Αυγούστου 2026</span>
-                        <h4 class="text-lg font-bold text-white mt-1 mb-2 hover:text-emerald-400 cursor-pointer">Βιοδιασπώμενα διαλύτες & πράσινη χημεία στη σύγχρονη παραγωγή</h4>
-                        <p class="text-slate-400 text-sm">Εξελίξεις στη χρήση καινοτόμων φυσικών διαλυτών για βιομηχανική χρήση.</p>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2 hover:text-emerald-400 cursor-pointer">
+                            <a href="news.html">Βιοδιασπώμενοι διαλύτες & πράσινη χημεία στη σύγχρονη παραγωγή</a>
+                        </h4>
+                        <p class="text-slate-400 text-sm mb-4">Εξελίξεις στη χρήση καινοτόμων φυσικών διαλυτών για βιομηχανική χρήση.</p>
+                        <a href="news.html" class="text-xs font-semibold text-emerald-400 hover:underline inline-flex items-center gap-1">Διαβάστε το άρθρο &rarr;</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="py-20 bg-[#0E131F] border-t border-slate-800/60">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-12">
@@ -354,6 +388,7 @@
         </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
     <footer class="border-t border-slate-800 py-10 bg-[#0B0F17] text-slate-500 text-sm">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-2 text-white font-bold">
@@ -365,6 +400,7 @@
         </div>
     </footer>
 
+    <!-- Scripts for Lucide Icons & Mobile Menu -->
     <script>
         lucide.createIcons();
 
