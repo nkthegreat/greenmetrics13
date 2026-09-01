@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | GreenMetrics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                        },
+                        dark: {
+                            bg: '#0B0F17',
+                            card: '#111827',
+                            border: '#1F2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0B0F17] text-slate-200 antialiased font-sans selection:bg-emerald-500 selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0B0F17]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold text-white tracking-tight">
+                <span class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400">
+                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                </span>
+                Green<span class="text-emerald-400">Metrics</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="index.html#home" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="about.html" class="text-emerald-400 transition-colors">About Us</a>
+                <a href="index.html#services" class="hover:text-emerald-400 transition-colors">Services</a>
+                <a href="index.html#training" class="hover:text-emerald-400 transition-colors">Green Business Training</a>
+                <a href="index.html#funding" class="hover:text-emerald-400 transition-colors">Funding</a>
+                <a href="index.html#news" class="hover:text-emerald-400 transition-colors">News</a>
+                <a href="index.html#contact" class="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/20">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 py-4 bg-[#0B0F17] border-b border-slate-800 space-y-4">
+            <a href="index.html#home" class="block text-slate-300 hover:text-emerald-400">Home</a>
+            <a href="about.html" class="block text-emerald-400 font-semibold">About Us</a>
+            <a href="index.html#services" class="block text-slate-300 hover:text-emerald-400">Services</a>
+            <a href="index.html#training" class="block text-slate-300 hover:text-emerald-400">Green Business Training</a>
+            <a href="index.html#funding" class="block text-slate-300 hover:text-emerald-400">Funding</a>
+            <a href="index.html#news" class="block text-slate-300 hover:text-emerald-400">News</a>
+            <a href="index.html#contact" class="inline-block px-5 py-2 rounded-full bg-emerald-500 text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER / HERO ================= -->
+    <section class="relative pt-36 pb-16 lg:pt-48 lg:pb-24 overflow-hidden border-b border-slate-800/60">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-6">
+                <i data-lucide="users" class="w-4 h-4"></i> About GreenMetrics
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Empowering Businesses for a <br>
+                <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Sustainable Future</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
+                Bridging science, innovative technology, and actionable circular strategies to accelerate the green transition.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT / WHO WE ARE ================= -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Story Card -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-emerald-400 font-bold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Who We Are
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Driving Measurable Change in the New Green Economy
+                    </h2>
+
+                    <div class="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+                        <p class="p-6 rounded-2xl bg-[#111827] border border-slate-800 text-slate-300">
+                            <strong>Green Metrics</strong> was founded with the goal of providing innovative solutions that enable businesses to adopt sustainable practices and technologies. Driven by the belief that sustainability is the key force for a better future, our mission is to help companies of all sizes reduce their environmental footprint and strengthen their position in the new green economy.
+                        </p>
+                        <p class="p-6 rounded-2xl bg-[#111827] border border-slate-800 text-slate-300">
+                            At <strong>Green Metrics</strong>, we combine expertise with innovation, delivering solutions tailored to the unique needs of each client. We are committed to creating positive change and believe that sustainable development is achievable through collaboration, research, and technology.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Strategic Pillars Card -->
+                <div class="lg:col-span-5">
+                    <div class="p-8 rounded-3xl bg-gradient-to-br from-[#111827] to-[#0E131F] border border-emerald-500/20 shadow-2xl relative">
+                        <div class="absolute top-0 right-0 p-8 opacity-10">
+                            <i data-lucide="shield-check" class="w-32 h-32 text-emerald-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i data-lucide="sparkles" class="text-emerald-400 w-5 h-5"></i> Our Driving Principles
+                        </h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl border border-emerald-500/20">
+                                    <i data-lucide="handshake" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Collaboration</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Co-creating high-impact strategies hand-in-hand with our partners and clients.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-teal-500/10 text-teal-400 rounded-xl border border-teal-500/20">
+                                    <i data-lucide="microscope" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Research</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Data-driven and science-backed solutions grounded in Lifecycle Assessments (LCA).</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 bg-blue-500/10 text-blue-400 rounded-xl border border-blue-500/20">
+                                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Technology</h4>
+                                    <p class="text-slate-400 text-sm mt-1">Leveraging digital platforms and modern metrics for precise sustainability tracking.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= METRICS / STATS BANNER ================= -->
+    <section class="py-16 bg-[#0E131F] border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <span class="block text-4xl font-extrabold text-emerald-400">100%</span>
+                    <span class="text-sm text-slate-400 mt-1 block">Tailored Solutions</span>
+                </div>
+                <div>
+                    <span class="block text-4xl font-extrabold text-emerald-400">Scope 1-3</span>
+                    <span class="text-sm text-slate-400 mt-1 block">Full GHG Emissions Coverage</span>
+                </div>
+                <div>
+                    <span class="block text-4xl font-extrabold text-emerald-400">Zero Waste</span>
+                    <span class="text-sm text-slate-400 mt-1 block">Circular Frameworks</span>
+                </div>
+                <div>
+                    <span class="block text-4xl font-extrabold text-emerald-400">EU CSRD</span>
+                    <span class="text-sm text-slate-400 mt-1 block">Compliance Ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA SECTION ================= -->
+    <section class="py-20 relative">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-white mb-4">Ready to accelerate your green transition?</h3>
+            <p class="text-slate-400 max-w-xl mx-auto mb-8">Let's discuss how Green Metrics can empower your organization with tailor-made circular solutions.</p>
+            <a href="index.html#contact" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 inline-flex items-center gap-2">
+                Get in Touch <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-slate-800 py-10 bg-[#0B0F17] text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-white font-bold">
+                <i data-lucide="leaf" class="w-5 h-5 text-emerald-400"></i> GreenMetrics
+            </div>
+            <div>
+                &copy; 2026 GreenMetrics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for Lucide Icons & Mobile Menu -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
