@@ -128,159 +128,332 @@
         </div>
     </section>
 
-    <!-- ================= ACTIVE CALLS FOR PROPOSALS (COMMENTED OUT) ================= -->
+    <!-- ================= ACTIVE CALLS FOR PROPOSALS ================= -->
     <main class="py-20 space-y-16">
         <div class="max-w-7xl mx-auto px-6">
             
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
                 <div>
                     <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2 block">Ευκαιριες Χρηματοδοτησης</span>
-                    <h2 class="text-3xl font-bold text-white">Τρέχουσες Προσκλήσεις (Calls for Proposals)</h2>
+                    <h2 class="text-3xl font-bold text-white">Τρέχουσες Προσκλήσεις (Calls for Proposals 2026)</h2>
                 </div>
                 <div class="flex items-center gap-2">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Προσεχώς Νέες Προκηρύξεις
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 18 Ενεργές Προκηρύξεις
                     </span>
                 </div>
             </div>
 
-            <!-- Μήνυμα αναμονής νέων προσκλήσεων -->
-            <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 text-center max-w-2xl mx-auto">
-                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mx-auto mb-4">
-                    <i data-lucide="clock" class="w-6 h-6"></i>
+            <!-- Calls Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- 1. Sweden Innovation Agency -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Vinnova (Σουηδία)</span>
+                            <span class="text-xs text-rose-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 4 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Κυκλικές Λύσεις για Δασικές Βιομηχανίες, Πλαστικά & Κλωστοϋφαντουργία</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Χρηματοδότηση από τον Οργανισμό Καινοτομίας της Σουηδίας αφιερωμένη σε καινοτόμα κυκλικά υλικά, βιο-βασισμένες πρώτες ύλες και τεχνολογίες ανάκτησης ινών.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">Επικείμενοι Κύκλοι Υποβολών</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                    Αυτή τη στιγμή επεξεργαζόμαστε τα νέα προγράμματα επιδοτήσεων. Επικοινωνήστε μαζί μας για να ελέγξουμε άμεσα τη διαθεσιμότητα προσκλήσεων για τον κλάδο σας.
-                </p>
-                <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm transition-all shadow-lg shadow-emerald-500/20">
-                    Εκδήλωση Ενδιαφέροντος <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
+
+                <!-- 2. RIVCircular -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Περιφερειακή Καινοτομία</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 17 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">RIVCircular: Ανάπτυξη & Εφαρμογή Τεχνολογιών Κυκλικής Οικονομίας</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Στοχευμένη πρόσκληση για έργα μηχανικής που αναπτύσσουν και εφαρμόζουν τεχνολογίες κυκλικής οικονομίας σε κρίσιμους παραγωγικούς τομείς.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 3. Horizon Europe Multilayer Packaging -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 17 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Πολυστρωματικές Εύκαμπτες Πλαστικές Συσκευασίες Τροφίμων</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Ευρωπαϊκές επιχορηγήσεις R&D για αντικατάσταση με μονο-υλικά, καινοτομίες επίστρωσης φραγμού (barrier coatings) και δυνατότητα μηχανικής/χημικής ανακύκλωσης.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 4. Horizon Europe CRMs from WEEE -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 17 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Ανάκτηση Κρίσιμων Πρώτων Υλών (CRM) από Ηλεκτρονικά Απόβλητα (ΑΗΗΕ)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Ανάκτηση κρίσιμων πρώτων υλών μέσω προηγμένων υδρομεταλλουργικών και βιο-εκχυλιστικών μεθόδων από ροές αποβλήτων ηλεκτρικού και ηλεκτρονικού εξοπλισμού.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 5. Resource Transition 2026 -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Resource Transition</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 17 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Resource Transition 2026: Χρηματοδότηση R&D</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Ανταγωνιστική χρηματοδότηση εφαρμοσμένης έρευνας για τεχνολογίες που προάγουν μια ανταγωνιστική και βιώσιμη οικονομία χαμηλού άνθρακα.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 6. Horizon Europe Textile Sorting -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 17 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Συστήματα Συλλογής, Διαλογής για Επαναχρησιμοποίηση & Επισκευή Υφασμάτων</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Δημοτικά και περιφερειακά συστήματα αυτοματοποιημένης διαλογής, κόμβοι επισκευής και κυκλικά δίκτυα logistics για μείωση απορρίμματος κλωστοϋφαντουργικών.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 7. Horizon Europe Blended Textiles -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 17 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Τεχνολογίες Ανακύκλωσης Μικτών Υφασμάτων Μετά την Κατανάλωση</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Θερμομηχανικές και χημικές διεργασίες ανακύκλωσης ίνας-προς-ΐνα για επίλυση των δυσκολιών διαχωρισμού σε σύμμεικτα προϊόντα (βαμβάκι-πολυεστέρας-ελαστάνη).
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 8. LIFE 2026 -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Πρόγραμμα LIFE</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 22 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">LIFE 2026: Ανάκτηση Πόρων από Απόβλητα & Κυκλική Οικονομία</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Κορυφαίο ευρωπαϊκό περιβαλλοντικό πρόγραμμα που χρηματοδοτεί πιλοτικές βιομηχανικές δράσεις κλεισίματος κύκλων υλικών και προστασίας περιβάλλοντος.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 9. Horizon Europe Food Ingredients -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 22 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Διαφοροποίηση Πηγών Διατροφικών Συστατικών</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Αξιοποίηση μικροφυκών, παραπροϊόντων και εναλλακτικών πρωτεϊνών σε υψηλής προστιθέμενης αξίας διατροφικά συστατικά μέσω πράσινης εκχύλισης.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 10. Raw Materials Partnership -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Ευρωπαϊκή Σύμπραξη</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 22 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Σύμπραξη Πρώτων Υλών: Κυκλικότητα στην Αλυσίδα Αξίας</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Πρόσκληση για προτάσεις που εισάγουν την κυκλικότητα σε ολόκληρη την αλυσίδα αξίας των κρίσιμων και μη ορυκτών πρώτων υλών.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 11. Circular Bio-based Europe JU -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">CBE JU</span>
+                            <span class="text-xs text-amber-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 22 Σεπ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Κλιμάκωση Ευρωπαϊκών Κυκλικών Βιο-βασισμένων Βιομηχανιών</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Χρηματοδότηση έργων για τη δημιουργία μονάδων βιοδιύλισης πρώτης γενιάς, πράσινων διαλυτών και βιο-χημικών πλατφορμών κλίμακας.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 12. CPNL 2026 Open Call -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-800 text-slate-300">CPNL (Ολλανδία)</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 6 Οκτ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Ανοιχτή Πρόσκληση CPNL για Ανακύκλωση Πλαστικών, Υφασμάτων & Καουτσούκ</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Πρόγραμμα του Ολλανδικού Εθνικού Ταμείου Ανάπτυξης για την επίλυση τεχνολογικών εμποδίων στην ανακύκλωση πολυμερών και τεχνικού καουτσούκ.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 13. RI.CIRCO.LO. Lombardy -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-800 text-slate-300">Περιφέρεια Λομβαρδίας (Ιταλία)</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> 6 Οκτ – 5 Νοε 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">RI.CIRCO.LO.: Στήριξη ΜΜΕ Λομβαρδίας σε Κυκλικές Πρωτοβουλίες</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Περιφερειακό πρόγραμμα ενίσχυσης μεταποιητικών ΜΜΕ για την υιοθέτηση κυκλικών στρατηγικών και αξιοποίηση παραπροϊόντων παραγωγής.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 14. Horizon Europe Circular Construction -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 8 Οκτ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Μοντέλα Κυκλικής Οικονομίας στον Κατασκευαστικό Τομέα</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Από τα κτίρια σε κλίμακα πόλης: χρηματοδότηση ψηφιακών διαβατηρίων υλικών, επιλεκτικής κατεδάφισης και επαναχρησιμοποίησης αδρανών υλικών.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 15. EIT RIS Raw Materials -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">EIT RawMaterials</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Cut-off: 16 Οκτ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">EIT RIS: Νέες Τεχνολογίες & Υπηρεσίες στις Πρώτες Ύλες</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Επιτάχυνση της εμπορικής ωρίμανσης για καινοτόμες τεχνολογίες ανάκτησης ορυκτών και κυκλικά επιχειρηματικά μοντέλα.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 16. EU Innovation Agri-Food Biomass -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">EU Innovation Call</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Cut-off: 20 Οκτ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Αξιοποίηση Υπολειμμάτων Αγροδιατροφικής Βιομάζας</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Βιομηχανικά έργα επίδειξης για την αναβάθμιση αγροτικών αποβλήτων σε βιοχημικά δομικά στοιχεία, φυσικές επιστρώσεις και πηγές βιοενέργειας.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 17. Horizon Europe Maintenance Buildings -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Horizon Europe</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 1 Δεκ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Μέτρα Συντήρησης & Επισκευής για Υπάρχοντα Κτίρια</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Επέκταση του κύκλου ζωής του κτιριακού αποθέματος της ΕΕ μέσω πακέτων κυκλικής ανακαίνισης και μη καταστροφικής δομικής επισκευής.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- 18. ORMAT2026 -->
+                <div class="bg-[#111827] border border-slate-800 hover:border-emerald-500/40 p-6 rounded-2xl flex flex-col justify-between transition-all">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-800 text-slate-300">ADEME (Γαλλία)</span>
+                            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Προθεσμία: 31 Δεκ 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">ORMAT2026: Μείωση Πρώτων Υλών μέσω Ανακύκλωσης</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Πρωτοβουλία της Γαλλικής Υπηρεσίας Περιβάλλοντος που χρηματοδοτεί βιομηχανικές επενδύσεις CAPEX για αντικατάσταση πρωτογενών υλών με ανακυκλωμένα δευτερογενή υλικά.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-end">
+                        <a href="contact.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">Ενδιαφέρον για Κοινοπραξία <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- 
-            ===================================================================
-            ΑΡΧΗ ΣΧΟΛΙΑΣΜΕΝΩΝ ΠΡΟΣΚΛΗΣΕΩΝ (ΞΕ-ΣΧΟΛΙΑΣΤΕ ΟΤΑΝ ΑΝΟΙΞΟΥΝ ΟΙ ΥΠΟΒΟΛΕΣ)
-            ===================================================================
-
-            <div class="space-y-8 mt-8">
-
-                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-emerald-500/40 transition-all shadow-xl">
-                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
-                        <div>
-                            <div class="flex flex-wrap items-center gap-3 mb-3">
-                                <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold">ΕΣΠΑ 2021-2027</span>
-                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs">Εθνικό Πρόγραμμα</span>
-                                <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> Ανοιχτό προς Υποβολή</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-2">Πράσινος Μετασχηματισμός & Κυκλική Οικονομία ΜμΕ</h3>
-                            <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">
-                                Ενίσχυση υφιστάμενων επιχειρήσεων για την υιοθέτηση συστημάτων ανακύκλωσης, αναβάθμιση ενεργειακής κλάσης κτιριακών υποδομών και εγκατάσταση εξοπλισμού χαμηλών εκπομπών άνθρακα.
-                            </p>
-                        </div>
-                        <div class="lg:text-right shrink-0">
-                            <span class="text-xs text-slate-400 block mb-1">Ποσοστό Ενίσχυσης</span>
-                            <span class="text-3xl font-extrabold text-emerald-400">40% - 55%</span>
-                            <span class="text-xs text-slate-500 block mt-1">Προϋπολογισμός: έως 500.000 €</span>
-                        </div>
-                    </div>
-
-                    <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
-                        <div>
-                            <span class="font-semibold text-emerald-300 block mb-1">Επιλέξιμες Δαπάνες:</span>
-                            <p class="text-slate-400">Μηχανολογικός εξοπλισμός LCA, φωτοβολταϊκά net-metering, πιστοποιήσεις ISO 14001 & ISO 59000.</p>
-                        </div>
-                        <div>
-                            <span class="font-semibold text-emerald-300 block mb-1">Δικαιούχοι:</span>
-                            <p class="text-slate-400">Υφιστάμενες & νέες Μικρομεσαίες Επιχειρήσεις (ΜμΕ) όλων των κλάδων.</p>
-                        </div>
-                        <div class="flex items-center md:justify-end">
-                            <a href="contact.html" class="w-full md:w-auto px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs transition shadow-lg shadow-emerald-500/20 text-center">
-                                Αίτηση Ελέγχου Επιλεξιμότητας
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-teal-500/40 transition-all shadow-xl">
-                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
-                        <div>
-                            <div class="flex flex-wrap items-center gap-3 mb-3">
-                                <span class="px-3 py-1 bg-teal-500/10 text-teal-400 border border-teal-500/20 rounded-full text-xs font-semibold">Horizon Europe</span>
-                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs">Cluster 6: Circular Economy & Bioeconomy</span>
-                                <span class="text-xs text-teal-400 font-semibold flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> Call for Proposals</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-2">HORIZON-CL6-CIRCBIO: Καινοτόμα Βιο-βασισμένα Υλικά & Διαλύτες</h3>
-                            <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">
-                                Χρηματοδότηση κοινοπραξιών (consortia) για την ανάπτυξη και βιομηχανική κλιμάκωση φυσικών βαθέως ευτηκτικών διαλυτών (NaDES), βιοδιασπώμενων πολυμερών και αξιοποίηση αγροτοδιατροφικών υπολειμμάτων.
-                            </p>
-                        </div>
-                        <div class="lg:text-right shrink-0">
-                            <span class="text-xs text-slate-400 block mb-1">Χρηματοδότηση Έργου</span>
-                            <span class="text-3xl font-extrabold text-teal-400">100% RIA / 70% IA</span>
-                            <span class="text-xs text-slate-500 block mt-1">Budget ανά έργο: 4M - 7M €</span>
-                        </div>
-                    </div>
-
-                    <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
-                        <div>
-                            <span class="font-semibold text-teal-300 block mb-1">Στόχος:</span>
-                            <p class="text-slate-400">Έρευνα & Βιομηχανική εφαρμογή τεχνολογιών TRL 4-7 σε ευρωπαϊκό επίπεδο.</p>
-                        </div>
-                        <div>
-                            <span class="font-semibold text-teal-300 block mb-1">Συμμετοχή:</span>
-                            <p class="text-slate-400">Ερευνητικά κέντρα, πανεπιστήμια, βιομηχανικοί εταίροι & καινοτόμες SMEs.</p>
-                        </div>
-                        <div class="flex items-center md:justify-end">
-                            <a href="contact.html" class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-500 hover:bg-teal-600 text-white font-semibold text-xs transition shadow-lg shadow-teal-500/20 text-center">
-                                Συμμετοχή σε Κοινοπραξία
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 hover:border-blue-500/40 transition-all shadow-xl">
-                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
-                        <div>
-                            <div class="flex flex-wrap items-center gap-3 mb-3">
-                                <span class="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-xs font-semibold">Ταμείο Ανάκαμψης & Ανθεκτικότητας</span>
-                                <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-xs">NextGenerationEU</span>
-                                <span class="text-xs text-blue-400 font-semibold flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> Produc-E Green</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-2">Βιομηχανική Συμβίωση & Επεξεργασία Δευτερογενών Υλικών</h3>
-                            <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">
-                                Καθεστώς ενίσχυσης για μεγάλες και μεσαίες βιομηχανικές μονάδες που επενδύουν σε γραμμές ανακύκλωσης, ανάκτησης πρώτων υλών και κλειστών κυκλωμάτων νερού/ενέργειας.
-                            </p>
-                        </div>
-                        <div class="lg:text-right shrink-0">
-                            <span class="text-xs text-slate-400 block mb-1">Μορφή Ενίσχυσης</span>
-                            <span class="text-3xl font-extrabold text-blue-400">Επιχορήγηση + Δάνεια</span>
-                            <span class="text-xs text-slate-500 block mt-1">Επενδυτικά σχέδια > 1M €</span>
-                        </div>
-                    </div>
-
-                    <div class="pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
-                        <div>
-                            <span class="font-semibold text-blue-300 block mb-1">Προτεραιότητα:</span>
-                            <p class="text-slate-400">Μείωση εκπομπών CO₂ κατά τουλάχιστον 30% και επαναχρησιμοποίηση αποβλήτων.</p>
-                        </div>
-                        <div>
-                            <span class="font-semibold text-blue-300 block mb-1">Προθεσμία:</span>
-                            <p class="text-slate-400">Άμεση αξιολόγηση με σειρά προτεραιότητας υποβολής φακέλου.</p>
-                        </div>
-                        <div class="flex items-center md:justify-end">
-                            <a href="contact.html" class="w-full md:w-auto px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs transition shadow-lg shadow-blue-500/20 text-center">
-                                Υποβολή Φακέλου
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            ===================================================================
-            ΤΕΛΟΣ ΣΧΟΛΙΑΣΜΕΝΩΝ ΠΡΟΣΚΛΗΣΕΩΝ
-            ===================================================================
-            -->
 
         </div>
 
@@ -288,13 +461,13 @@
         <section class="max-w-7xl mx-auto px-6">
             <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-[#111827] border border-emerald-500/20 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div class="max-w-2xl">
-                    <h3 class="text-2xl font-bold text-white mb-2">Δεν βρήκατε το κατάλληλο πρόγραμμα;</h3>
+                    <h3 class="text-2xl font-bold text-white mb-2">Χρειάζεστε Υποστήριξη σε Κοινοπραξία ή Φάκελο;</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Αναλαμβάνουμε τον συνεχή έλεγχο νέων προκηρύξεων και σας ειδοποιούμε άμεσα μόλις ανοίξει πρόγραμμα επιδότησης που ταιριάζει ακριβώς στον ΚΑΔ και τον προϋπολογισμό της επιχείρησής σας.
+                        Η GreenMetrics συνεργάζεται με πανεπιστήμια, ερευνητικά κέντρα και βιομηχανικούς ομίλους σε όλη την Ευρώπη, παρέχοντας τεχνική συγγραφή, μοντελοποίηση LCA και πλήρη προετοιμασία φακέλου υποβολής.
                     </p>
                 </div>
                 <a href="contact.html" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 shrink-0">
-                    Ζητήστε Εξατομικευμένο Έλεγχο
+                    Κλείστε Συνάντηση Συμβουλευτικής
                 </a>
             </div>
         </section>
