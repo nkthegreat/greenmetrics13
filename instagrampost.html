@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenMetrics Instagram Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen p-6">
+
+    <!-- Instagram Canvas (1080x1080 aspect-square) -->
+    <div id="post" class="w-[600px] h-[600px] bg-[#0B0F17] text-white relative overflow-hidden flex flex-col justify-between p-12 border border-slate-800 shadow-2xl select-none">
+        
+        <!-- Ambient Blur Effects -->
+        <div class="absolute -top-24 -left-24 w-72 h-72 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Top Row: Badge -->
+        <div class="relative z-10 flex justify-between items-center">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider">
+                <i data-lucide="recycle" class="w-3.5 h-3.5"></i> Sustainable Transition
+            </span>
+            <span class="text-xs text-slate-500 font-mono tracking-widest">2026</span>
+        </div>
+
+        <!-- Center: Navbar Logo & Slogan -->
+        <div class="relative z-10 text-center my-auto flex flex-col items-center">
+            <!-- Navbar Box Icon -->
+            <div class="w-24 h-24 rounded-3xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-6 shadow-lg shadow-emerald-500/15">
+                <i data-lucide="leaf" class="w-12 h-12"></i>
+            </div>
+
+            <!-- Brand Name -->
+            <h1 class="text-4xl font-extrabold tracking-tight mb-3">
+                Green<span class="text-emerald-400">Metrics</span>
+            </h1>
+
+            <!-- Hook Title -->
+            <p class="text-lg font-bold text-slate-200 mb-2">
+                Μετρήσιμη Βιωσιμότητα. Κυκλική Μετάβαση.
+            </p>
+            <p class="text-sm text-slate-400 max-w-sm mx-auto leading-relaxed">
+                LCA • ESG Benchmarks • Scope 1-3 • Πράσινες Χρηματοδοτήσεις
+            </p>
+        </div>
+
+        <!-- Bottom Row: Footer Callout -->
+        <div class="relative z-10 pt-6 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+            <span class="flex items-center gap-1.5 font-medium text-slate-300">
+                <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i> greenmetrics.gr
+            </span>
+            <span class="text-emerald-400 font-semibold flex items-center gap-1">
+                Link in bio <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </span>
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
