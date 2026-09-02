@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Business Training | GreenMetrics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                        },
+                        dark: {
+                            bg: '#0B0F17',
+                            card: '#111827',
+                            border: '#1F2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0B0F17] text-slate-200 antialiased font-sans selection:bg-emerald-500 selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0B0F17]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="indexeng.html" class="flex items-center gap-2 text-2xl font-bold text-white tracking-tight">
+                <span class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400">
+                    <i data-lucide="leaf" class="w-6 h-6"></i>
+                </span>
+                Green<span class="text-emerald-400">Metrics</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="indexeng.html" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="abouteng.html" class="hover:text-emerald-400 transition-colors">About Us</a>
+                <a href="serviceseng.html" class="hover:text-emerald-400 transition-colors">Services</a>
+                <a href="greenbusinesstrainingeng.html" class="text-emerald-400 font-semibold transition-colors">Green Training</a>
+                <a href="fundingeng.html" class="hover:text-emerald-400 transition-colors">Funding</a>
+                <a href="newseng.html" class="hover:text-emerald-400 transition-colors">News</a>
+                <a href="contacteng.html" class="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/20">Contact</a>
+                
+                <!-- Language Switcher Button (Desktop) -->
+                <a href="greenbusinesstraining.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800/60 hover:bg-slate-800 hover:border-emerald-500/50 text-xs font-semibold text-slate-200 transition-all" title="Ελληνική Έκδοση">
+                    <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i> GR
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 py-4 bg-[#0B0F17] border-b border-slate-800 space-y-4">
+            <a href="indexeng.html" class="block text-slate-300 hover:text-emerald-400">Home</a>
+            <a href="abouteng.html" class="block text-slate-300 hover:text-emerald-400">About Us</a>
+            <a href="serviceseng.html" class="block text-slate-300 hover:text-emerald-400">Services</a>
+            <a href="greenbusinesstrainingeng.html" class="block text-emerald-400 font-semibold">Green Training</a>
+            <a href="fundingeng.html" class="block text-slate-300 hover:text-emerald-400">Funding</a>
+            <a href="newseng.html" class="block text-slate-300 hover:text-emerald-400">News</a>
+            <a href="contacteng.html" class="inline-block px-5 py-2 rounded-full bg-emerald-500 text-white font-semibold">Contact</a>
+            
+            <!-- Language Switcher Button (Mobile) -->
+            <a href="greenbusinesstraining.html" class="flex items-center gap-2 text-slate-300 hover:text-emerald-400 font-semibold pt-2 border-t border-slate-800">
+                <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i> Ελληνικά (GR)
+            </a>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="relative pt-36 pb-16 lg:pt-48 lg:pb-24 overflow-hidden border-b border-slate-800/60">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-6">
+                <i data-lucide="graduation-cap" class="w-4 h-4"></i> Executive & Corporate Upskilling
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Green Business <br>
+                <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Training Programs</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                Empower your workforce and leadership with actionable knowledge, modern frameworks, and cutting-edge skills for your organization's sustainable and circular transition.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="py-20 space-y-20">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+
+                <!-- Pillar 01 -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 sm:p-10 flex flex-col justify-between hover:border-emerald-500/40 transition-all shadow-xl relative overflow-hidden">
+                    <div class="absolute -top-12 -right-12 w-40 h-40 bg-emerald-500/5 rounded-full blur-2xl pointer-events-none"></div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="p-3 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-2xl">
+                                <i data-lucide="briefcase" class="w-7 h-7"></i>
+                            </span>
+                            <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold px-3 py-1 bg-emerald-500/5 border border-emerald-500/20 rounded-full">Pillar 01</span>
+                        </div>
+
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">1. Green Business Management</h2>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
+                            Strategic governance and leadership toolkits designed for decision-makers and business executives, focusing on ESG compliance, green leadership, and circular business model innovation.
+                        </p>
+
+                        <div class="space-y-6 border-t border-slate-800/80 pt-6">
+                            <div>
+                                <h3 class="text-sm font-semibold text-emerald-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Core Modules
+                                </h3>
+                                <ul class="space-y-2.5 text-sm text-slate-300">
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0"></span>
+                                        <span><strong>ESG Governance & Compliance:</strong> EU regulatory frameworks, CSRD reporting, and the European Green Taxonomy.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0"></span>
+                                        <span><strong>Circular Business Models:</strong> Designing Product-as-a-Service, resource sharing platforms, and industrial symbiosis networks.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0"></span>
+                                        <span><strong>Sustainable Finance:</strong> Evaluating green investment returns and managing physical & transition climate risks.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="text-sm font-semibold text-emerald-300 uppercase tracking-wider mb-2">Target Audience</h3>
+                                <p class="text-slate-400 text-xs sm:text-sm">C-Level Executives, ESG & Sustainability Officers, Project Managers, Operations Directors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-emerald-400"></i> Executive Seminars / Workshops</span>
+                        <a href="contacteng.html" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors">
+                            Inquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pillar 02 -->
+                <div class="bg-[#111827] border border-slate-800 rounded-3xl p-8 sm:p-10 flex flex-col justify-between hover:border-teal-500/40 transition-all shadow-xl relative overflow-hidden">
+                    <div class="absolute -top-12 -right-12 w-40 h-40 bg-teal-500/5 rounded-full blur-2xl pointer-events-none"></div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="p-3 bg-teal-500/10 text-teal-400 border border-teal-500/20 rounded-2xl">
+                                <i data-lucide="sparkles" class="w-7 h-7"></i>
+                            </span>
+                            <span class="text-xs uppercase tracking-widest text-teal-400 font-bold px-3 py-1 bg-teal-500/5 border border-teal-500/20 rounded-full">Pillar 02</span>
+                        </div>
+
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">2. Greening the Business</h2>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
+                            Practical, operational training engineered to overhaul day-to-day practices, slash material waste, and instill a lasting culture of sustainability across company departments.
+                        </p>
+
+                        <div class="space-y-6 border-t border-slate-800/80 pt-6">
+                            <div>
+                                <h3 class="text-sm font-semibold text-teal-300 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-400"></i> Core Modules
+                                </h3>
+                                <ul class="space-y-2.5 text-sm text-slate-300">
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-teal-400 mt-2 shrink-0"></span>
+                                        <span><strong>Operational Decarbonization:</strong> Practical Scope 1 & 2 mitigation strategies and facility-level energy conservation.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-teal-400 mt-2 shrink-0"></span>
+                                        <span><strong>Waste Minimization & Zero-Waste:</strong> Solid waste streams, source segregation, and secondary byproduct valorization.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-teal-400 mt-2 shrink-0"></span>
+                                        <span><strong>Green Supply Chain:</strong> Sustainable procurement policies, eco-packaging guidelines, and vendor ESG screening.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="text-sm font-semibold text-teal-300 uppercase tracking-wider mb-2">Target Audience</h3>
+                                <p class="text-slate-400 text-xs sm:text-sm">Supply Chain Managers, Facility Managers, HR Teams, Technical Engineers, and Operations Staff.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400 flex items-center gap-1.5"><i data-lucide="users-round" class="w-4 h-4 text-teal-400"></i> Team Workshops / Hands-on Bootcamps</span>
+                        <a href="contacteng.html" class="text-sm font-semibold text-teal-400 hover:text-teal-300 flex items-center gap-1 transition-colors">
+                            Inquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Methodology Section -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#111827] to-[#0E131F] border border-slate-800">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-2 block">Our Methodology</span>
+                    <h3 class="text-3xl font-bold text-white">How We Deliver Results</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#0B0F17] p-6 rounded-2xl border border-slate-800/80 text-center sm:text-left">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                            <i data-lucide="sliders" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">Custom Needs Assessment</h4>
+                        <p class="text-slate-400 text-sm">We tailor all training curriculum to your organization's industry domain, scale, and specific compliance benchmarks.</p>
+                    </div>
+
+                    <div class="bg-[#0B0F17] p-6 rounded-2xl border border-slate-800/80 text-center sm:text-left">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                            <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">Gamified & Interactive Cases</h4>
+                        <p class="text-slate-400 text-sm">Utilizing real-world business case studies, interactive scenario modeling, and hands-on simulation workshops.</p>
+                    </div>
+
+                    <div class="bg-[#0B0F17] p-6 rounded-2xl border border-slate-800/80 text-center sm:text-left">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2">Certification & Impact Tracking</h4>
+                        <p class="text-slate-400 text-sm">Providing completion credentials alongside actionable KPIs to measure knowledge retention and workplace implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="p-10 rounded-3xl bg-gradient-to-r from-emerald-900/30 via-[#111827] to-[#111827] border border-emerald-500/20 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="max-w-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Design Your Custom In-House Program</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Contact our training advisors to co-create a tailored corporate curriculum aligned with your company's strategic sustainability roadmap.
+                    </p>
+                </div>
+                <a href="contacteng.html" class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition-all shadow-lg shadow-emerald-500/25 shrink-0">
+                    Contact Us Today
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-slate-800 py-8 bg-[#0B0F17] text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-white font-bold">
+                <i data-lucide="leaf" class="w-5 h-5 text-emerald-400"></i> GreenMetrics
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="contacteng.html" class="hover:text-slate-300 transition-colors">Contact</a>
+                <span>&copy; 2026 GreenMetrics. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for Lucide Icons & Mobile Menu -->
+    <script>
+        lucide.createIcons();
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
